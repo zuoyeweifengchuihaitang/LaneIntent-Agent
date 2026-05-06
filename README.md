@@ -2,8 +2,6 @@
 
 这是一个可直接运行的 **多 Agent 协作式科研实验流水线模板**，用于展示“使用 Agent / AI 驱动构建的具体成果”。它面向 highD 车辆轨迹数据，覆盖从数据检查、样本构建、类别均衡、F1 单帧物理特征生成、模型训练到报告生成的完整流程。
 
-> 说明：这是一个可运行的 MVP 工程，不依赖云端 API。默认使用规则化 Agent 编排和工具调用，便于答辩或材料提交时展示“核心痛点、核心逻辑流、自动化成果”。如果你后续要接入大模型，只需要替换 `src/agents.py` 中的 Agent 决策逻辑即可。
-
 ## 1. 项目解决的核心痛点
 
 1. highD 数据处理链路长，人工检查 tracks / tracksMeta / recordingMeta 文件容易漏项。
@@ -51,8 +49,6 @@ highd_research_agent_mvp/
 python main.py --config config.example.json
 ```
 
-如果 `demo_data/raw_data` 不存在，程序会自动生成一份 highD 风格的演示数据，然后完整跑通流程。
-
 ## 5. 使用你自己的 highD 数据
 
 把 highD 文件放到类似下面的目录：
@@ -95,7 +91,7 @@ your_data/raw_data/
 | `metrics_summary.csv` | 各模型评估结果 |
 | `final_report.md` | 自动生成的实验报告 |
 
-## 7. 可写进申请表的成果描述
+## 7. 成果描述
 
 我构建了一个面向车辆换道意图识别实验的 AI 辅助科研 Agent，主要解决 highD 数据处理链路长、实验脚本版本多、特征对齐和结果复现成本高的问题。该 Agent 会根据研究目标自动拆解任务，包括轨迹数据完整性检查、换道/直行样本标注、类别均衡处理、F1 单帧物理特征生成、特征对齐检查，以及 SVM、RandomForest、LogisticRegression 等模型的实验对比。
 
