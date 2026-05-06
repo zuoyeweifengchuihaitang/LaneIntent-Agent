@@ -1,0 +1,8 @@
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.6
+scikit-learn>=1.2
+joblib>=1.2
+streamlit>=1.28
+# 可选：安装后会自动启用 XGBoost 模型
+# xgboost>=1.7

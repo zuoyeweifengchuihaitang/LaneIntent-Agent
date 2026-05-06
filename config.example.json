@@ -1,0 +1,18 @@
+{
+  "raw_data_dir": "demo_data/raw_data",
+  "output_dir": "outputs",
+  "fps": 25,
+  "left_when_lane_decreases": true,
+  "future_seconds_for_anchor": 1.0,
+  "vy_threshold": 0.2,
+  "future_lateral_disp_threshold": 0.4,
+  "lane_keep_stride_frames": 25,
+  "lane_keep_future_seconds": 1.0,
+  "balance_random_seed": 42,
+  "test_size": 0.2,
+  "val_size": 0.0,
+  "model_random_seed": 42,
+  "min_samples_per_class": 5,
+  "save_plots": true,
+  "enable_xgboost": false
+}

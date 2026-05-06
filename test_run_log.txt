@@ -1,0 +1,34 @@
+
+================================
+1/5 PlannerAgent: 生成实验计划
+================================
+[PlannerAgent] 实验计划已写入 outputs/00_plan.json
+
+==================================
+2/5 DataAgent: 检查数据并构建样本索引
+==================================
+[DataAgent] 数据检查完成: outputs/data_check_report.csv
+[DataAgent] 原始样本数: 363，均衡后样本数: 36
+[DataAgent] 均衡后分布: [{'label_name': '左换道', 'count': 12}, {'label_name': '直行', 'count': 12}, {'label_name': '右换道', 'count': 12}]
+
+=========================================
+3/5 FeatureAgent: 生成单帧 F1 特征并检查对齐
+=========================================
+[FeatureAgent] F1 特征表: outputs/f1_frame_table.csv
+[FeatureAgent] 对齐检查: outputs/feature_alignment_report.csv
+
+=================================
+4/5 ModelAgent: 训练模型并汇总指标
+=================================
+[ModelAgent] 指标汇总: outputs/metrics_summary.csv
+
+===============================
+5/5 ReportAgent: 生成最终报告
+===============================
+[ReportAgent] 最终报告: outputs/final_report.md
+
+==============================
+运行完成
+==============================
+输出目录: /mnt/data/highd_research_agent_mvp/outputs
+最终报告: /mnt/data/highd_research_agent_mvp/outputs/final_report.md

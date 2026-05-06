@@ -1,0 +1,5 @@
+outputs/
+demo_data/
+__pycache__/
+*.pyc
+.env
